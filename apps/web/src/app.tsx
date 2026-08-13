@@ -106,7 +106,7 @@ function Login(): React.JSX.Element {
   return (
     <div className="auth-wrap">
       <form className="panel auth-card" onSubmit={(e) => { void submit(e); }}>
-        <div className="brand"><img alt="GamePoint" className="brand-wordmark" src="/art/gpa-wordmark.png" /></div>
+        <div className="brand"><img alt="GamePointAgent" className="brand-wordmark" src="/art/gpa-wordmark.png" /></div>
         <h1>{mode === 'signin' ? 'Sign in' : 'Create your account'}</h1>
         <p className="muted">Screen-only coaching. No game injection. Consent required before capture.</p>
         <Field label="Email">
@@ -163,7 +163,7 @@ function Onboarding(props: { userId: string; onDone: (p: Profile) => void }): Re
           <span>I confirm I am 13 or older.</span>
         </label>
         {error ? <p className="form-error" role="alert">{error}</p> : null}
-        <button disabled={busy || !ageOk} type="submit">{busy ? 'Saving…' : 'Enter GamePoint →'}</button>
+        <button disabled={busy || !ageOk} type="submit">{busy ? 'Saving…' : 'Enter GamePointAgent →'}</button>
       </form>
     </div>
   );

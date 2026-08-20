@@ -1852,3 +1852,222 @@ button.coach-tile.active { border-color: var(--lime, #c7ff13); box-shadow: 0 0 1
   0% { transform: translate(0, 0); }
   100% { transform: translate(400px, 400px); }
 }
+
+/* Marketing Page Footer */
+.marketing-footer {
+  position: relative;
+  z-index: 10;
+  max-width: 1200px;
+  margin: 4rem auto 0;
+  padding: 3rem 2rem 2.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.marketing-footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.marketing-footer .footer-brand strong {
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+}
+
+.marketing-footer .footer-brand p {
+  margin: 0.5rem 0 0;
+  color: var(--soft);
+  font-size: 0.9rem;
+}
+
+.marketing-footer .footer-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.9rem;
+}
+
+.marketing-footer .footer-links a {
+  color: var(--soft);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.marketing-footer .footer-links a:hover {
+  color: var(--lime);
+}
+
+.marketing-footer .footer-links span {
+  color: rgba(243, 241, 229, 0.2);
+}
+
+.marketing-footer .footer-bottom {
+  border-top: 1px solid rgba(243, 241, 229, 0.08);
+  padding-top: 1.5rem;
+  color: var(--soft);
+  font-size: 0.8rem;
+}
+
+/* Legal Pages (/privacy & /terms) */
+.legal-page {
+  min-height: 100vh;
+  background: var(--ink);
+  color: #f3f1e5;
+  padding-bottom: 5rem;
+}
+
+.legal-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(5, 6, 3, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+}
+
+.legal-header-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1.25rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.legal-brand {
+  text-decoration: none;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+}
+
+.legal-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.legal-nav a {
+  color: var(--soft);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.legal-nav a:hover {
+  color: var(--lime);
+}
+
+.legal-container {
+  max-width: 900px;
+  margin: 3rem auto 0;
+  padding: 0 2rem;
+}
+
+.legal-callout {
+  background: rgba(255, 139, 23, 0.08);
+  border: 1px solid rgba(255, 139, 23, 0.3);
+  border-left: 4px solid var(--amber);
+  border-radius: 6px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.legal-callout strong {
+  color: var(--amber);
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.legal-callout p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.legal-callout code {
+  color: var(--lime);
+  font-family: monospace;
+  font-size: 0.85rem;
+}
+
+.legal-content {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 3rem 2.5rem;
+}
+
+.legal-content h1 {
+  font-size: 2.2rem;
+  margin: 0 0 0.5rem;
+  color: #fff;
+}
+
+.legal-meta {
+  color: var(--soft);
+  font-size: 0.85rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.legal-content section {
+  margin-bottom: 2.5rem;
+}
+
+.legal-content h2 {
+  font-size: 1.25rem;
+  color: var(--lime);
+  margin: 0 0 1rem;
+}
+
+.legal-content p {
+  color: #d1cfbe;
+  line-height: 1.65;
+  margin: 0 0 1rem;
+}
+
+.legal-content ul {
+  color: #d1cfbe;
+  line-height: 1.65;
+  margin: 0 0 1.25rem;
+  padding-left: 1.5rem;
+}
+
+.legal-content li {
+  margin-bottom: 0.5rem;
+}
+
+.legal-notice {
+  background: rgba(199, 255, 19, 0.06);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #e5e3d3;
+}
+
+.legal-footer-nav {
+  margin-top: 3rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.footer-legal a {
+  color: var(--soft);
+  text-decoration: none;
+  margin: 0 4px;
+}
+
+.footer-legal a:hover {
+  color: var(--lime);
+}
+

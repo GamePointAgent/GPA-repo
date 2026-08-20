@@ -3,6 +3,8 @@ import { createRoot } from 'react-dom/client';
 import './styles.css';
 import { RouteLink, Sidebar, navigate, useRoute } from './lib';
 import { AppRoot, SessionFooter } from './app';
+import { PrivacyPolicy } from './privacy';
+import { TermsOfService } from './terms';
 
 type Coach = {
   name: string;
@@ -383,12 +385,32 @@ function MarketingLanding(): React.JSX.Element {
       </header>
       <MarketingHero />
       <DashboardMockup />
+      <footer className="marketing-footer animate-enter delay-4">
+        <div className="footer-content">
+          <div className="footer-brand">
+            <strong><b style={{ color: 'var(--lime)', marginRight: '8px'}}>G</b> GAMEPOINTAGENT</strong>
+            <p>Screen-vision-only AI gaming companion. Zero game injection.</p>
+          </div>
+          <div className="footer-links">
+            <RouteLink to="/privacy">Privacy Policy</RouteLink>
+            <span>·</span>
+            <RouteLink to="/terms">Terms of Service</RouteLink>
+            <span>·</span>
+            <RouteLink to="/app">Sign In</RouteLink>
+          </div>
+        </div>
+        <div className="footer-bottom">
+          <small>© 2026 GamePointAgent. All rights reserved. Not runtime supported until cleared per title.</small>
+        </div>
+      </footer>
     </div>
   );
 }
 
 function Root(): React.JSX.Element {
   const path = useRoute();
+  if (path === '/privacy') return <PrivacyPolicy />;
+  if (path === '/terms') return <TermsOfService />;
   return path === '/' || path === '' ? <MarketingLanding /> : <AppRoot />;
 }
 
